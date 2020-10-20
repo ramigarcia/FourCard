@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* Primary */
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+  /* Neutral */
+  --veryDarkBlue: #4c4e61;
+  --grayishBlue: hsl(229, 6%, 66%, 0.6);
+  --veryLightGray: #fafafa;
+}
+
+body{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  background: var(--veryLightGray);
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+}
+
+.hero{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 70px auto 50px auto;
+}
+
+.hero .title{
+  font-size: 1.5rem;
+  color: var(--veryDarkBlue);
+  font-weight: 200;
+}
+
+.hero h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero .hero-text{
+  text-align: center;
+  color: var(--grayishBlue);
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 400px;
+  margin-top: auto;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.card{
+  height: 250px;
+  box-shadow: 2px 8px 14px 0  var(--grayishBlue);
+  padding: 30px;
+  border-radius: 8px;
+  margin: 2rem 0;
+  max-width: 400px;
+}
+
+.card.cyan{
+  border-top: 5px solid var(--cyan);
+  margin: 0;
+}
+
+.card.red{
+  border-top: 5px solid var(--red);
+}
+
+.card.orange{
+  border-top: 5px solid var(--orange);
+}
+
+.card.blue{
+  margin: 0;
+  border-top: 5px solid var(--blue);
+}
+
+.card img{
+  display: block;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.card h2{
+  color: var(--veryDarkBlue);
+  font-size: 1.5rem;
+}
+
+.card p{
+  color: var(--grayishBlue);
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1200px){
+  .cards{
+    flex-direction: row;
+  }
+
+  .card{
+    margin: 1rem;
+  }
+}
